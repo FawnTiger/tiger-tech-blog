@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tiger Tech - Your go-to tech blog for the latest gadgets, tips, and tech news.">
+  <meta name="keywords" content="Tech blog, budget phones, operating systems, PC tips, Tiger Tech">
+  <meta name="author" content="Tiger Tech">
+  <title>Tiger Tech | Home</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+<!-- Toggle Button -->
+  <div class="theme-toggle">
+    <button id="toggleTheme">Toggle Theme</button>
+  </div>
+  <!-- Logo -->
+  <header class="logo-header">
+    <img src="images/tiger-tech-logo.png" alt="Tiger Tech Logo" class="logo">
+  </header>
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="container">
+      <a href="index.html"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  <!-- Welcome Message -->
+  <section class="hero-section">
+    <h1>Welcome to Tiger Tech</h1>
+    <p>Your trusted source for tech insights and updates!</p>
+  </section>
+
+  <!-- Search Blog Posts -->
+<h2 class="section-title">Search Blog Posts</h2>
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search blog posts..." />
+  <button onclick="searchPosts()">Search</button>
+</div>
+<div id="searchResults" class="search-results"></div>
+
+<section class="featured-posts">
+<h2>Latest Posts</h2>
+    <div class="posts-grid">
+  <article class="post">
+    <img src="images/budget-phones.jpg" alt="Best budget phones 2025" loading="lazy">
+    <h2><a href="posts/post1-budget-phones.html">Best budget phones 2025</a></h2>
+    <p>Discover the best budget phones in 2025 and why.</p>
+  </article>
+  <!-- Repeat for other posts -->
+  <article class="post">
+    <img src="images/best-os.jpg" alt="Best Operating Systems for Your PC" loading="lazy">
+    <h2><a href="posts/post2-best-os.html">Best Operating Systems for Your PC</a></h2>
+    <p>Choosing the right OS for performance and reliability.</p>
+  </article>
+  <article class="post">
+    <img src="images/post3-buying-phone-guide.jpg" alt="What to Look for When Buying a Phone" loading="lazy">
+    <h2><a href="posts/post3-buying-phone-guide.html">What to Look for When Buying a Phone</a></h2>
+    <p>Essential tips for choosing your perfect phone.</p>
+  </article>
+  <article class="post">
+    <img src="images/post4-buying-laptop-pc-guide.jpg" alt="What to Look for When Buying a Laptop or PC" loading="lazy">
+    <h2><a href="posts/post4-buying-laptop-pc-guide.html">What to Look for When Buying a Laptop or PC</a></h2>
+    <p>How to pick the right computer for your needs.</p>
+  </article>
+  <article class="post">
+    <img src="images/post5-install-os-pc.jpg" alt="How to Install Different Operating Systems" loading="lazy">
+    <h2><a href="posts/post5-install-os-pc.html">How to Install Different Operating Systems</a></h2>
+    <p>Step-by-step guide for installing Windows, Linux, and more.</p>
+  </article>
+  <article class="post">
+    <img src="images/post6-upgrade-os-pc.jpg" alt="How to Upgrade Different Operating Systems" loading="lazy">
+    <h2><a href="posts/post6-upgrade-os-pc.html">How to Upgrade Different Operating Systems</a></h2>
+    <p>Simple ways to upgrade your computer's OS safely.</p>
+  </article>
+</section>
+    </div>
+</section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Tiger Tech. All rights reserved.</p>
+    <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </footer>
+
+  <!-- Light and Dark Mode Script -->
+  <script>
+    const toggleTheme = document.getElementById('toggleTheme');
+    toggleTheme.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+    });
+  </script>
+<script>
+  const posts = [
+    {
+      title: "Latest and Best Budget Phones in 2025",
+      url: "posts/post1-budget-phones.html"
+    },
+    {
+      title: "Best Operating Systems for Your PC",
+      url: "posts/post2-best-os.html"
+    },
+    {
+      title: "What to Look for When Buying a Phone",
+      url: "posts/post3-buying-a-phone.html"
+    },
+    {
+      title: "What to Look for When Buying a Laptop",
+      url: "posts/post4-buying-laptop.html"
+    },
+    {
+      title: "How to Install Different OS on a PC",
+      url: "posts/post5-install-os.html"
+    },
+    {
+      title: "How to Upgrade an OS",
+      url: "posts/post6-upgrade-os.html"
+    }
+  ];
+
+  function searchPosts() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const results = posts.filter(post =>
+      post.title.toLowerCase().includes(input)
+    );
+
+    const resultDiv = document.getElementById("searchResults");
+    resultDiv.innerHTML = "";
+
+    if (results.length > 0) {
+      results.forEach(post => {
+        const link = document.createElement("a");
+        link.href = post.url;
+        link.textContent = post.title;
+        link.className = "search-link";
+        resultDiv.appendChild(link);
+      });
+    } else {
+      resultDiv.innerHTML = "<p>No matching posts found.</p>";
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - Tiger Tech</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Sign up to Tiger Tech newsletter and stay updated with the latest in tech!">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/tiger-tech-logo.png" alt="Tiger Tech Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button class="mode-toggle" id="modeToggle">Toggle Mode</button>
+        </nav>
+    </header>
+
+    <section class="subscribe-form-section">
+        <h1>Subscribe to Our Newsletter</h1>
+        <p>Stay updated with the latest tech trends, budget phones, PC tips, and much more from Tiger Tech!</p>
+
+        <form id="subscribeForm" class="subscribe-form">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <p id="thankYouMessage" style="display:none; color: lime; font-size: 18px; margin-top: 20px;">
+            🎉 Thank you for signing up! Welcome to the Tiger Tech family! 🚀
+        </p>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Tiger Tech. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const form = document.getElementById('subscribeForm');
+        const thankYouMessage = document.getElementById('thankYouMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            form.style.display = 'none';
+            thankYouMessage.style.display = 'block';
+        });
+
+        // Toggle mode script
+        const modeToggle = document.getElementById('modeToggle');
+        modeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>

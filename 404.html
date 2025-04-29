@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 Not Found | Tiger Tech</title>
+  <meta name="description" content="Oops! The page you're looking for isn't here. Head back to Tiger Tech homepage.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+<!-- Toggle Button -->
+  <div class="theme-toggle">
+    <button id="toggleTheme">Toggle Theme</button>
+  </div>
+  <!-- Header Navigation -->
+  <header>
+    <div class="navbar">
+      <!-- Logo -->
+  <header class="logo-header">
+    <img src="images/tiger-tech-logo.png" alt="Tiger Tech Logo" class="logo">
+  </header>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+	  <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+   </div>
+  </header>
+
+  <!-- 404 Content -->
+  <main class="error-section">
+    <div class="error-container">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>Oops! The page you're looking for doesn't exist or has been moved.</p>
+      <a href="index.html" class="btn">← Go Back Home</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Tiger Tech. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms-and-conditions.html">Terms & Conditions</a> |
+        <a href="cookies-policy.html">Cookies Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggleTheme = document.getElementById('toggleTheme');
+    toggleTheme.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+    });
+  </script>
+
+</body>
+</html>

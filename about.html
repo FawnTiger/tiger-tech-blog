@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tiger Tech</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+<!-- Toggle Button -->
+  <div class="theme-toggle">
+    <button id="toggleTheme">Toggle Theme</button>
+  </div>
+        <!-- Logo -->
+  <header class="logo-header">
+    <img src="images/tiger-tech-logo.png" alt="Tiger Tech Logo" class="logo">
+  </header>
+
+        <!-- NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="container">
+      <a href="index.html"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </header>
+
+    <main class="content">
+        <h2>About Tiger Tech</h2>
+        <p>
+            Welcome to Tiger Tech — your ultimate destination for tech tips, device reviews, and cutting-edge tech news!
+        </p>
+        <p>
+            Our mission is to make technology simple, accessible, and exciting for everyone, especially the young and tech-savvy generation. 
+            Whether you're looking for the best gadgets, tutorials, or insider guides, we've got you covered.
+        </p>
+        <p>
+            Join our fast-growing community and stay ahead with Tiger Tech, where tech meets passion!
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tiger Tech. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About</a> | 
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms & Conditions</a> | 
+            <a href="cookies.html">Cookies Policy</a>
+        </div>
+    </footer>
+
+    <!-- Light and Dark Mode Script -->
+  <script>
+    const toggleTheme = document.getElementById('toggleTheme');
+    toggleTheme.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover insightful articles on the latest budget phones, operating systems, and tech buying guides. Stay updated with Tiger Tech!">
+    <meta name="keywords" content="budget phones, tech blog, operating systems, phone buying guide, PC tips">
+    <meta name="author" content="Tiger Tech">
+    <title>Blog - Tiger Tech</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   <!-- Toggle Button -->
+ <div class="theme-toggle">
+   <button id="toggleTheme">Toggle Theme</button>
+ </div>
+    <div class="logo-header">
+        <img src="images/tiger-tech-logo.png" alt="Tiger Tech Logo" class="logo">
+    </div>
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+  <div class="container">
+      <a href="index.html"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+    <section class="hero-section">
+        <h1>Our Blog</h1>
+        <p>Latest articles and guides from Tiger Tech</p>
+    </section>
+
+    <section class="featured-posts">
+        <h2>Latest Blog Posts</h2>
+        <div class="posts-grid">
+            <a href="posts/post1-budget-phones.html" class="post-card">Best Budget Phones 2025</a>
+            <a href="posts/post2-best-os.html" class="post-card">Best Operating Systems for Your PC</a>
+            <a href="posts/post3-buying-phone-guide.html" class="post-card">What to Look for When Buying a Phone</a>
+            <a href="posts/post4-buying-laptop-pc-guide.html" class="post-card">What to Look for When Buying a Laptop or PC</a>
+            <a href="posts/post5-install-os-pc.html" class="post-card">How to Install Different OS on Your PC</a>
+            <a href="posts/post6-upgrade-os-pc.html" class="post-card">How to Upgrade Your PC Operating System</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+    <p>&copy; 2025 Tiger Tech. All rights reserved.</p>
+    <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+    </footer>
+
+    <!-- Light and Dark Mode Script -->
+  <script>
+    const toggleTheme = document.getElementById('toggleTheme');
+    toggleTheme.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+    });
+  </script>
+
+
+</body>
+</html>
