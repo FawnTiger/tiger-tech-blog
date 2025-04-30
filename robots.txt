@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://FawnTiger.github.io/tiger-tech-blog/sitemap.xml
+Sitemap: https://fawntiger.github.io/tiger-tech-blog/sitemap.xml
